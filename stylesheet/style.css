@@ -1,16 +1,44 @@
 * {
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+
+.carousel-item p {
+  margin-top: 15px;
+}
+
+.nav-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: 10%;
 }
 
 .nav_main {
-  align-items: baseline;
-  padding: 20px;
   display: flex;
-  justify-content: space-evenly;
-  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav-all {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav_main .nav-link {
+  display: flex;
+  gap: 30px;
 }
 
 .nav-arch {
-  color: gray;
+  color: black;
+  font-weight: bolder;
   text-decoration: none;
 }
 
@@ -21,9 +49,28 @@
 .btn-nav {
   border: none;
   background-color: red;
-  width: 135px;
-  padding: 5px;
+  width: 225px;
+  padding: 10px;
   color: white;
+  border-radius: 15px;
+}
+
+.btn-hero {
+  border: none;
+  background-color: red;
+  width: 35%;
+  padding: 10px;
+  color: white;
+  border-radius: 15px;
+}
+
+.btn-hero a {
+  color: white;
+  text-decoration: none;
+}
+
+.btn-hero a:hover {
+  color: black;
 }
 
 .btn-nav a {
@@ -36,13 +83,13 @@
 }
 
 .hero {
-  margin-top: 50px;
+  margin-top: 80px;
   margin-bottom: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  font-size: small;
+  font-size: large;
   gap: 150px;
 }
 
@@ -51,18 +98,196 @@
 }
 
 .hero_info {
+  margin-top: 110px;
+  display: flex;
+  padding: 20px;
+  flex-direction: row;
+  gap: 35px;
+  justify-content: center;
+}
+
+.hero_card {
+  font-size: small;
+  width: 25%;
+  height: 95px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero_card h3 {
+  margin-top: 10px;
+}
+
+.icon-hero {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+.icon-hero svg {
+  width: 70px;
+  height: 70px;
+}
+
+.hero_card p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 140px;
+}
+
+.btn-contato {
+  border: none;
+  background-color: red;
+  width: 40%;
+  padding: 15px;
+  color: white;
+  border-radius: 15px;
+}
+
+.btn-contato a {
+  color: white;
+  text-decoration: none;
+}
+
+.btn-contato a:hover {
+  color: black;
 }
 
 .servicos {
+  margin-top: 140px;
+  font-size: medium;
+}
+
+.servicos-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.servicos-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  margin-inline-start: 10%;
+  margin-inline-end: 10%;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.servicos-main img {
+  width: 400px;
+  height: 600px;
+  object-fit: cover;
 }
 
 .number_info {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-number {
+  border: none;
+  background-color: red;
+  width: 12%;
+  padding: 15px;
+  color: white;
+  border-radius: 15px;
+}
+
+.btn-number a {
+  color: white;
+  text-decoration: none;
+}
+
+.btn-number a:hover {
+  color: black;
+}
+
+.number-card {
+  font-size: large;
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  margin-bottom: 15px;
+}
+
+.number-card h2 {
+  color: red;
+}
+
+.carousel-inner {
+  background-color: crimson;
+  padding: 25px;
+  margin-bottom: -40px;
 }
 
 .depoimentos {
+  margin-top: 140px;
+  margin-bottom: 40px;
+}
+
+.depoimento-intro {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 90px;
+  flex-direction: column;
+}
+
+.depoimento-card {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  margin-inline-start: 15%;
+  margin-inline-end: 15%;
+  line-height: 1.5;
+  padding: 20px;
+}
+
+.stantemant {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.stantemant img {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+}
+
+.depoimento-card p {
+  color: white;
+  font-size: smaller;
+}
+
+.depoimento-card h6 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
 }
 
 .endereco {
@@ -85,13 +310,423 @@
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
+.map-card button {
+  border: none;
+  background-color: red;
+  width: 50%;
+  padding: 10px;
+  color: white;
+}
+
 .map-card a {
+  color: white;
+  text-decoration: none;
+}
+
+.map-card a:hover {
   color: black;
   text-decoration: none;
 }
 
 .view {
+  margin-top: -7px;
 }
 
 .FAQ {
+  display: flex;
+  flex-direction: row;
+  margin-top: 200px;
+  gap: 50px;
+  align-items: baseline;
+  margin-inline-start: 20%;
+  margin-inline-end: 10%;
+  margin-bottom: 200px;
+}
+
+.btn-faq {
+  border: none;
+  background-color: red;
+  width: 70%;
+  padding: 15px;
+  color: white;
+}
+
+.btn-faq a {
+  color: white;
+  text-decoration: none;
+}
+
+.btn-faq a:hover {
+  color: black;
+}
+
+.accordion {
+  width: 700px;
+}
+
+.accordion-button {
+  color: black;
+  font-weight: bold;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: white !important;
+  color: inherit !important;
+  box-shadow: none !important;
+}
+
+.accordion-button:focus {
+  background-color: white !important;
+  box-shadow: none !important;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  color: black;
+  margin-inline: 10%;
+  margin-inline-end: 10%;
+  font-size: small;
+  gap: 30px;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.about-ft {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.about-ft p {
+  color: red;
+  font-weight: bold;
+}
+
+.credit {
+  height: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-inline-start: 10%;
+  margin-inline-end: 10%;
+  font-size: smaller;
+}
+
+.rede-ft-icon {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.rede-ft-end {
+  display: flex;
+  gap: 5px;
+}
+
+.rede-icons-ft {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  gap: 5px;
+}
+
+.rede-icons-ft svg:hover {
+  fill: black;
+}
+
+.rede-icons-ft img {
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+}
+
+.red-ft p {
+  color: red;
+  font-weight: bold;
+}
+
+.red-ft h5 {
+  font-weight: b;
+}
+
+.red-ft a {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.red-ft a:hover {
+  color: black;
+}
+
+.credit p:last-child {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.icon-fale a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: white;
+  text-decoration: none;
+  justify-content: center;
+}
+
+.icon-fale a svg {
+  fill: white;
+  transition: 0.2s;
+}
+
+.icon-fale a:hover {
+  color: black;
+}
+
+.icon-fale a:hover svg {
+  fill: black;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  border: none;
+  background: none;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: black;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  /* mantém o hamburger fixo no canto */
+  header {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  /* animação do menu */
+
+  .nav_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-height: 0;
+    overflow: hidden;
+
+    transition: max-height 0.4s ease;
+  }
+
+  .nav-all {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .nav_main .nav-link {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* remove display none */
+  .nav_main .nav-arch,
+  .nav_main .btn-nav {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+  }
+
+  .nav_main.active {
+    max-height: 500px;
+    padding: 20px 0;
+  }
+
+  .nav_main.active .nav-arch,
+  .nav_main.active .btn-nav {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .servicos {
+    margin-inline-start: 10%;
+    margin-inline-end: 10%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .servicos-intro strong {
+    font-weight: bold;
+  }
+
+  .servicos-intro i {
+    font-weight: 500;
+  }
+
+  .servicos-main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .servicos img {
+    width: 100%;
+  }
+
+  .number-card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .number-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn-number {
+    width: 60%;
+    border-radius: 15px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin-bottom: 20px;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline-start: 10%;
+    margin-inline-end: 10%;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .hero-info strong {
+    font-weight: 500;
+  }
+
+  .hero-info h2 {
+    font-weight: bold;
+  }
+
+  .btn-hero {
+    width: 100%;
+  }
+
+  .hero_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+  }
+
+  .about-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline-start: 10%;
+    margin-inline-end: 10%;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .btn-contato {
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  .hero_card {
+    width: 100%;
+  }
+
+  .FAQ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline-start: 5%;
+    margin-inline-end: 5%;
+    margin-top: 120px;
+  }
+
+  .FAQ-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-faq {
+    width: 80%;
+    border-radius: 15px;
+  }
+
+  .accordion {
+    width: 90%;
+  }
+
+  .depoimento-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline-start: 10%;
+    margin-inline-end: 10%;
+  }
+
+  .depoimento-card {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    height: 800px;
+    margin-inline-start: 5%;
+    margin-inline-end: 5%;
+    line-height: 1.5;
+    padding: 0px;
+  }
+
+  .depoimento-card div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .view img {
+    height: 200px;
+  }
+
+  .map-card {
+    display: none;
+  }
+
+  .credit {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
