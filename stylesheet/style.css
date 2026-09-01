@@ -2,16 +2,16 @@
    R9 Informática — Design tokens
    ============================================ */
 :root {
-  --color-primary: #1656f5;
-  --color-primary-dark: #0d3fbe;
-  --color-primary-light: #5b8cff;
-  --color-ink: #15161a;
+  --color-primary: #0158ff;
+  --color-primary-dark: #0041c2;
+  --color-primary-light: #5c96ff;
+  --color-ink: #04162e;
   --color-body: #4b4f58;
   --color-muted: #6b7280;
   --color-bg: #ffffff;
   --color-bg-alt: #eef3ff;
   --color-border: #e2e7f5;
-  --color-panel: #17181d;
+  --color-panel: #071c38;
 
   --font-heading: "Space Grotesk", "Segoe UI", sans-serif;
   --font-body: "Inter", "Segoe UI", sans-serif;
@@ -174,7 +174,7 @@ section.tight {
 .btn-primary {
   background-color: var(--color-primary);
   color: #ffffff;
-  box-shadow: 0 10px 24px rgba(22, 86, 245, 0.3);
+  box-shadow: 0 10px 24px rgba(1, 88, 255, 0.3);
 }
 
 .btn-primary:hover {
@@ -238,8 +238,18 @@ section.tight {
 
 .logo-mark {
   height: 44px;
-  width: 44px;
+  width: auto;
   flex-shrink: 0;
+  display: block;
+}
+
+.logo-chip {
+  display: inline-flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+  line-height: 0;
 }
 
 .brand-text {
@@ -881,8 +891,8 @@ footer {
 }
 
 .footer-brand .logo-mark {
-  height: 38px;
-  width: 38px;
+  height: 30px;
+  width: auto;
 }
 
 .footer-brand .brand-text {
