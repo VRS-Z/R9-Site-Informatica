@@ -1,572 +1,588 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>R9 - Assistência Técnica</title>
-    <link rel="stylesheet" href="stylesheet/style.css"">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-    <link rel="shortcut icon" href="stylesheet/favcom.png" type="image/x-icon">
+    <title>R9 Informática — Assistência Técnica Especializada</title>
+    <meta
+      name="description"
+      content="Assistência técnica especializada em computadores, notebooks e videogames em Boa Viagem - CE. Reparos com garantia, técnicos certificados e orçamento rápido pelo WhatsApp."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="R9 Informática — Assistência Técnica Especializada" />
+    <meta
+      property="og:description"
+      content="Reparos de computadores, notebooks e videogames com garantia. Orçamento rápido pelo WhatsApp."
+    />
+    <meta property="og:image" content="stylesheet/logo-social.png" />
+    <meta name="theme-color" content="#1656f5" />
+    <link rel="icon" href="stylesheet/favicon.svg" type="image/svg+xml" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stylesheet/style.css" />
   </head>
-
- 
-
   <body>
+    <a href="#main-content" class="skip-link">Pular para o conteúdo</a>
 
+    <!-- Sprite de ícones: definidos uma única vez e reaproveitados via <use>, em vez de colar o mesmo SVG várias vezes -->
+    <svg class="icon-sprite" aria-hidden="true">
+      <symbol id="logo-mark" viewBox="0 0 48 48">
+        <circle cx="24" cy="24" r="22" fill="#ffffff" stroke="#15161a" stroke-width="3"/>
+        <text x="24" y="31" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="19">
+          <tspan fill="#15161a">R</tspan><tspan fill="#1656f5">9</tspan>
+        </text>
+      </symbol>
+      <symbol id="icon-whatsapp" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M20.52 3.48A11.82 11.82 0 0012.05 0C5.5 0 .18 5.32.18 11.87c0 2.09.55 4.12 1.6 5.91L0 24l6.41-1.68a11.86 11.86 0 005.64 1.44h.01c6.55 0 11.87-5.32 11.87-11.87 0-3.17-1.23-6.15-3.41-8.41zM12.06 21.3a9.42 9.42 0 01-4.8-1.32l-.34-.2-3.8 1 1.01-3.71-.22-.38a9.4 9.4 0 011.44-11.66 9.41 9.41 0 0113.3 0 9.4 9.4 0 010 13.3 9.36 9.36 0 01-6.59 2.97zm5.17-7.03c-.28-.14-1.65-.82-1.9-.91-.25-.09-.43-.14-.61.14-.18.27-.7.91-.86 1.1-.16.18-.32.2-.6.07-.28-.14-1.18-.43-2.25-1.36-.83-.74-1.39-1.65-1.55-1.93-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.46.09-.18.05-.34-.02-.48-.07-.14-.61-1.48-.84-2.03-.22-.52-.44-.45-.61-.46l-.52-.01c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.3 0 1.36.98 2.68 1.12 2.86.14.18 1.94 2.96 4.7 4.14.66.28 1.18.45 1.58.58.66.21 1.26.18 1.73.11.53-.08 1.65-.67 1.88-1.31.23-.64.23-1.19.16-1.31-.07-.11-.25-.18-.52-.32z"/>
+      </symbol>
+      <symbol id="icon-instagram" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm5 5.5A4.5 4.5 0 1112 16.5 4.5 4.5 0 0112 7.5zm6.5-.75a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0zM12 9a3 3 0 100 6 3 3 0 000-6z"/>
+      </symbol>
+      <symbol id="icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"></circle>
+        <polyline points="12 6 12 12 16 14"></polyline>
+      </symbol>
+      <symbol id="icon-mail" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M2 4h20a2 2 0 0 1 2 2v.5l-12 7.5L0 6.5V6a2 2 0 0 1 2-2zm22 4.2V18a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8.2l11.4 7.1a1 1 0 0 0 1.2 0L24 8.2z"/>
+      </symbol>
+      <symbol id="icon-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+        <circle cx="12" cy="10" r="3"/>
+      </symbol>
+      <symbol id="icon-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 19V5M5 12l7-7 7 7"/>
+      </symbol>
+      <symbol id="icon-chevron-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M15 18l-6-6 6-6"/>
+      </symbol>
+      <symbol id="icon-chevron-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9 18l6-6-6-6"/>
+      </symbol>
+    </svg>
 
-    <header>
-
-  <div class="nav-top" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000" >
-
-    <a href="#">
-      <img 
-        class="img-logo"
-        src="stylesheet/logo.jpeg"
-        width="300"
-        height="100"
-        alt="R9 Informática">
-    </a>
-
-    <button class="hamburger" id="hamburger" aria-label="Abrir menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-
-  </div>
-
-
-  <nav class="nav_main" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
-
-    <div class="nav-all">
-
-      <div class="nav-link">
-        <a class="nav-arch" href="#services">Serviços</a>
-        <a class="nav-arch" href="#depoimento">Depoimentos</a>
-        <a class="nav-arch" href="#endereco">Endereço</a>
-        <a class="nav-arch" href="#FAQ">FAQ</a>
-      </div>
-
-      <div class="icon-fale">
-
-        <a class="btn-nav"
-           href="https://wa.me/5588999194391"
-           target="_blank"
-           rel="noopener">
-
-          <svg xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24" 
-            fill="#ffffff"
-            viewBox="0 0 24 24">
-            <path d="M20.52 3.48A11.82 11.82 0 0012.05 0C5.5 0 .18 5.32.18 11.87c0 2.09.55 4.12 1.6 5.91L0 24l6.41-1.68a11.86 11.86 0 005.64 1.44h.01c6.55 0 11.87-5.32 11.87-11.87 0-3.17-1.23-6.15-3.41-8.41zM12.06 21.3a9.42 9.42 0 01-4.8-1.32l-.34-.2-3.8 1 1.01-3.71-.22-.38a9.4 9.4 0 011.44-11.66 9.41 9.41 0 0113.3 0 9.4 9.4 0 010 13.3 9.36 9.36 0 01-6.59 2.97zm5.17-7.03c-.28-.14-1.65-.82-1.9-.91-.25-.09-.43-.14-.61.14-.18.27-.7.91-.86 1.1-.16.18-.32.2-.6.07-.28-.14-1.18-.43-2.25-1.36-.83-.74-1.39-1.65-1.55-1.93-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.46.09-.18.05-.34-.02-.48-.07-.14-.61-1.48-.84-2.03-.22-.52-.44-.45-.61-.46l-.52-.01c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.3 0 1.36.98 2.68 1.12 2.86.14.18 1.94 2.96 4.7 4.14.66.28 1.18.45 1.58.58.66.21 1.26.18 1.73.11.53-.08 1.65-.67 1.88-1.31.23-.64.23-1.19.16-1.31-.07-.11-.25-.18-.52-.32z"/>
-          </svg>
-
-          
-
-          Solicitar Orçamento
-
+    <header class="site-header" id="siteHeader">
+      <div class="container">
+        <a href="#" class="brand">
+          <svg class="logo-mark" aria-hidden="true"><use href="#logo-mark"></use></svg>
+          <span class="brand-text"><strong>R9</strong> Informática</span>
         </a>
 
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="mainNav"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="main-nav" id="mainNav" aria-label="Menu principal">
+          <ul class="nav-links">
+            <li><a href="#services" class="nav-link">Serviços</a></li>
+            <li><a href="#depoimento" class="nav-link">Depoimentos</a></li>
+            <li><a href="#endereco" class="nav-link">Endereço</a></li>
+            <li><a href="#FAQ" class="nav-link">FAQ</a></li>
+          </ul>
+          <a href="https://wa.me/5588999194391" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+            <svg class="icon"><use href="#icon-whatsapp"></use></svg>
+            Solicitar Orçamento
+          </a>
+        </nav>
       </div>
+    </header>
 
-    </div>
+    <main id="main-content">
+      <section class="hero">
+        <div class="container">
+          <div class="reveal">
+            <h1>Assistência Técnica Especializada!</h1>
+            <p class="lead-strong">Tá precisando de manutenção para seu computador, notebook ou videogame?</p>
+            <p class="lead">
+              Caiu, quebrou, superaqueceu, parou de funcionar? Traga seu equipamento
+              para quem realmente entende do assunto.
+            </p>
+            <a href="https://wa.me/5588999194391" target="_blank" rel="noopener" class="btn btn-primary">
+              <svg class="icon"><use href="#icon-whatsapp"></use></svg>
+              Solicitar Orçamento
+            </a>
+          </div>
 
-  </nav>
+          <div class="hero-visual reveal">
+            <svg viewBox="0 0 220 190" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="30" y="20" width="160" height="105" rx="10" stroke="#3a3c45" stroke-width="3"/>
+              <rect x="42" y="32" width="136" height="81" rx="4" fill="#1656f5" fill-opacity="0.14"/>
+              <path d="M85 65h50M85 80h32" stroke="#5b8cff" stroke-width="4" stroke-linecap="round"/>
+              <rect x="10" y="128" width="200" height="14" rx="7" stroke="#3a3c45" stroke-width="3"/>
+              <circle cx="150" cy="45" r="26" fill="#1656f5"/>
+              <path d="M141 45l6 6 12-12" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+      </section>
 
-</header>
-
-
-    <main>
-      <section class="hero" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
-        <div class="hero-info">
-        <h2>Assistência Técnica Especializada!</h2>
-        <p><strong>Tá precisando de uma manunteção para seu computador, notebook ou videgame?</strong></p>
-        <p><i>Caiu, Quebrou, Superaqueceu, Parou de funcionar?! <br> Traga seu equipamento para quem realmente entende do assunto.</i></p>
-          <div class="icon-fale">
-              
-        <a class="btn-hero" href="https://wa.me/5588999194391" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff" viewBox="0 0 24 24">
-  <path d="M20.52 3.48A11.82 11.82 0 0012.05 0C5.5 0 .18 5.32.18 11.87c0 2.09.55 4.12 1.6 5.91L0 24l6.41-1.68a11.86 11.86 0 005.64 1.44h.01c6.55 0 11.87-5.32 11.87-11.87 0-3.17-1.23-6.15-3.41-8.41zM12.06 21.3a9.42 9.42 0 01-4.8-1.32l-.34-.2-3.8 1 1.01-3.71-.22-.38a9.4 9.4 0 011.44-11.66 9.41 9.41 0 0113.3 0 9.4 9.4 0 010 13.3 9.36 9.36 0 01-6.59 2.97zm5.17-7.03c-.28-.14-1.65-.82-1.9-.91-.25-.09-.43-.14-.61.14-.18.27-.7.91-.86 1.1-.16.18-.32.2-.6.07-.28-.14-1.18-.43-2.25-1.36-.83-.74-1.39-1.65-1.55-1.93-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.46.09-.18.05-.34-.02-.48-.07-.14-.61-1.48-.84-2.03-.22-.52-.44-.45-.61-.46l-.52-.01c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.3 0 1.36.98 2.68 1.12 2.86.14.18 1.94 2.96 4.7 4.14.66.28 1.18.45 1.58.58.66.21 1.26.18 1.73.11.53-.08 1.65-.67 1.88-1.31.23-.64.23-1.19.16-1.31-.07-.11-.25-.18-.52-.32z"/>
-</svg>
-          Solicitar Orçamento</a>
-
+      <section class="features tight" id="services">
+        <div class="container">
+          <div class="features-grid">
+            <div class="feature-card reveal">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="7" y="7" width="10" height="10" rx="2"/>
+                  <path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 15h3M1 9h3M1 15h3"/>
+                </svg>
+              </div>
+              <h3>Reparos Avançados</h3>
+              <p>Realizamos reparos avançados de placa lógica.</p>
             </div>
-        </div>
-        <div>
-          <img src="https://imgs.search.brave.com/waztGEMfNLgcPOR2lmOOIjXxhHv4z0ZEJJL3FAiQIbU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9rYnRl/Y2guY29tLmJyL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDIyLzA4/L3JlcGFpcl9jb21w/dXRlci5tMy13ODAw/LTE2LTkuanBn" width="500px" height="300px" alt="">
-        </div>
-      </section>
-      <section class="hero_info" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
 
-        <div class="hero_card">
-          <div class="icon-hero">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#ff0000" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-  <rect x="7" y="7" width="10" height="10" rx="2"/>
-  <path d="M9 1v3M15 1v3M9 20v3M15 20v3"/>
-  <path d="M20 9h3M20 15h3M1 9h3M1 15h3"/>
-</svg>
-          </div>
-          <h3><strong>Reparos Avançados</strong></h3>
-          <p><i>Realizamos com reparos avançados de placa lógica</i></p>
-        </div>
-
-        <div class="hero_card">
-          <div class="icon-hero">
-<svg xmlns="http://www.w3.org/2000/svg" fill="#ff0000" viewBox="0 0 24 24">
-  <path d="M12 12a4 4 0 1 0-0.001-7.999A4 4 0 0 0 12 12zm0 2c-4 0-7 2-7 5v1h14v-1c0-3-3-5-7-5zm7.5-2.5l-2 2-1-1-1 1 2 2 3-3-1-1z"/>
-</svg>
-          </div>
-          <h3><strong>Técnicos Certificados</strong></h3>
-          <p>Você tem a segurança com nossos técnicos certificados</p>
-        </div>
-
-        <div class="hero_card">
-          <div class="icon-hero">
-  <svg xmlns="http://www.w3.org/2000/svg" fill="#ff0000" viewBox="0 0 24 24">
-  <path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4zm-1 10l-2-2-1.5 1.5L11 15l6-6-1.5-1.5L11 12z"/>
-</svg>
-          </div>
-        
-          <h3><strong>Reparos com Garantia</strong></h3>
-          <p>Oferecemos garantia para todos os reparos realizados</p>
-        </div>
-
-      </section>
-      <section class="about" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
-        <div>
-          <img 
-          src="stylesheet/logo2.jpeg"
-          width="500px" height="300px" alt="">
-        </div>
-        <div class="about-info">
-        <h2><strong>Reparos expressos que você vê!</strong></h2>
-          <p>
-          <i>
-          Na R9 Informatica, trabalhamos com total transparência. Por isso, a <br>
-          maioria dos reparos são feito com o equipamento aberto na frente do <br>
-          cliente. Isso significa que você pode acompanhar tudo bem de pertinho, <br>
-          passo a passo, seja bateria viciada ou um aparelho quebrado. Ainda, você <br>
-          tem a oportunidade de tirar suas dúvidas durante o processo, e ter certeza <br>
-          da privacidade e segurança que a nossa assistência proporciona.
-          </i>
-          </p>
-      <button class="btn-contato">
-          <div class="icon-fale">
-              
-        <a href="https://wa.me/5588999194391" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff" viewBox="0 0 24 24">
-  <path d="M20.52 3.48A11.82 11.82 0 0012.05 0C5.5 0 .18 5.32.18 11.87c0 2.09.55 4.12 1.6 5.91L0 24l6.41-1.68a11.86 11.86 0 005.64 1.44h.01c6.55 0 11.87-5.32 11.87-11.87 0-3.17-1.23-6.15-3.41-8.41zM12.06 21.3a9.42 9.42 0 01-4.8-1.32l-.34-.2-3.8 1 1.01-3.71-.22-.38a9.4 9.4 0 011.44-11.66 9.41 9.41 0 0113.3 0 9.4 9.4 0 010 13.3 9.36 9.36 0 01-6.59 2.97zm5.17-7.03c-.28-.14-1.65-.82-1.9-.91-.25-.09-.43-.14-.61.14-.18.27-.7.91-.86 1.1-.16.18-.32.2-.6.07-.28-.14-1.18-.43-2.25-1.36-.83-.74-1.39-1.65-1.55-1.93-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.46.09-.18.05-.34-.02-.48-.07-.14-.61-1.48-.84-2.03-.22-.52-.44-.45-.61-.46l-.52-.01c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.3 0 1.36.98 2.68 1.12 2.86.14.18 1.94 2.96 4.7 4.14.66.28 1.18.45 1.58.58.66.21 1.26.18 1.73.11.53-.08 1.65-.67 1.88-1.31.23-.64.23-1.19.16-1.31-.07-.11-.25-.18-.52-.32z"/>
-</svg>
-          Solicitar Orçamento</a>
-
+            <div class="feature-card reveal">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="8" r="5"/>
+                  <path d="M8.5 12.5L7 22l5-3 5 3-1.5-9.5"/>
+                </svg>
+              </div>
+              <h3>Técnicos Certificados</h3>
+              <p>Você tem a segurança de contar com técnicos certificados.</p>
             </div>
-      </button>
-        </div>
-      </section>
-      <section class="servicos" data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000" id="services">
-        <div class="servicos-intro">
-        <h2><strong>Serviços Prestado</strong></h2>
-        <p><i>Realizamos todos os serviços para o seu Equipamento. Nossa missão é deixa-lo novo de novo.</i></p>
-        </div>
-        <div class="servicos-main">
-        <div>
-          <h4><strong>Formatação e instalação do Windows</strong></h4>
-          <p><i>Instalação limpa do sistema, drivers e programas essenciais.</i></p>
-          <br>
-          <h4><strong>Upgrade de computador e notebook</strong></h4>
-          <p><i>Instalação de SSD, aumento de memória RAM e melhorias de desempenho.</i></p>
-          <br>
-          <h4><strong>Limpeza e manutenção preventiva</strong></h4>
-          <p><i>Limpeza interna, troca de pasta térmica e otimização do equipamento.</i></p>
-        </div>
-          <img src="https://imgs.search.brave.com/waztGEMfNLgcPOR2lmOOIjXxhHv4z0ZEJJL3FAiQIbU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9rYnRl/Y2guY29tLmJyL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDIyLzA4/L3JlcGFpcl9jb21w/dXRlci5tMy13ODAw/LTE2LTkuanBn" alt="">
-        <div>
-          <h4><strong>Remoção de vírus e otimização do sistema</strong></h4>         
-          <p><i>Eliminação de vírus, malwares e lentidão no computador.</i></p> 
-          <br>
-          <h4><strong>Reparo de computador e notebooks</strong></h4>
-          <p><i>Diagnóstico e conserto de placas, telas, teclado, bateria e outros componentes.</i></p>
-          <br>
-          <h4><strong>Instalação e configuração de programas</strong></h4>
-          <p><i>Pacote Office, drivers, softwares profissionais e utilitários.</i></p>
-        </div>
-        </div>
-        </section>
-        <section class="number_info" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
-          <div class="number-card">
-        <div class="number-card-info">
-          <h2>+ de 3.000</h2>
-          <p><strong>Limpezas Preventivas</strong></p>
-        </div>
-        <div class="number-card-info">
-          <h2>+ de 10.000</h2>
-          <p><strong>Clientes Atendidos</strong></p>
-        </div>
-        <div class="number-card-info">
-          <h2>+ de 5.000</h2>
-          <p><strong>Manunteções</strong></p>
-        </div>
-          </div>
-      <button class="btn-number">
-         <div class="icon-fale">
-              
-        <a href="https://wa.me/5588999194391" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff" viewBox="0 0 24 24">
-  <path d="M20.52 3.48A11.82 11.82 0 0012.05 0C5.5 0 .18 5.32.18 11.87c0 2.09.55 4.12 1.6 5.91L0 24l6.41-1.68a11.86 11.86 0 005.64 1.44h.01c6.55 0 11.87-5.32 11.87-11.87 0-3.17-1.23-6.15-3.41-8.41zM12.06 21.3a9.42 9.42 0 01-4.8-1.32l-.34-.2-3.8 1 1.01-3.71-.22-.38a9.4 9.4 0 011.44-11.66 9.41 9.41 0 0113.3 0 9.4 9.4 0 010 13.3 9.36 9.36 0 01-6.59 2.97zm5.17-7.03c-.28-.14-1.65-.82-1.9-.91-.25-.09-.43-.14-.61.14-.18.27-.7.91-.86 1.1-.16.18-.32.2-.6.07-.28-.14-1.18-.43-2.25-1.36-.83-.74-1.39-1.65-1.55-1.93-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.46.09-.18.05-.34-.02-.48-.07-.14-.61-1.48-.84-2.03-.22-.52-.44-.45-.61-.46l-.52-.01c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.3 0 1.36.98 2.68 1.12 2.86.14.18 1.94 2.96 4.7 4.14.66.28 1.18.45 1.58.58.66.21 1.26.18 1.73.11.53-.08 1.65-.67 1.88-1.31.23-.64.23-1.19.16-1.31-.07-.11-.25-.18-.52-.32z"/>
-</svg>
-          Solicitar Orçamento</a>
 
+            <div class="feature-card reveal">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z"/>
+                  <path d="M9 12l2 2 4-4"/>
+                </svg>
+              </div>
+              <h3>Reparos com Garantia</h3>
+              <p>Oferecemos garantia para todos os reparos realizados.</p>
             </div>
-      </button>
-      </section>
-     
-
-
-
-      <section class="endereco" data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000" id="endereço">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.904238182483!2d-39.73481594013738!3d-5.119132005055621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7bdef6951e97ff1%3A0xe1462e8fb5df7edf!2sR9%20INFORM%C3%81TICA!5e0!3m2!1spt-BR!2sbr!4v1773151963013!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <div class="map-card" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
-
-
-        <h5><b>Onde estamos localizados</b></h5>
-        <p>R. Maria da Conceição Alves de Melo <br> 194 - Padre Paulo</p>
-
-
-        <h5><b>Horários de Atendimento</b></h5>
-
- <div class="rede-ft-end">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <circle cx="12" cy="12" r="10"></circle>
-  <polyline points="12 6 12 12 16 14"></polyline>
-</svg>
-        <p>Seg - Sex: 8h ás 17h</p>
-
-</div>
-<div class="rede-ft-icon">
-   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <circle cx="12" cy="12" r="10"></circle>
-  <polyline points="12 6 12 12 16 14"></polyline>
-</svg>
-        <p>Sab: 8h ás 12h & 14h ás 18h</p>
-</div>
-
-
-
-        <button><a target="_blank" href="https://www.google.com/maps?cid=16232713101670055647&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAEYASAB&hl=pt-BR&gl=BR&source=embed">Google Maps</a></button>
-    
-      </div>
+          </div>
+        </div>
       </section>
 
- <section class="depoimentos" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000" id="depoimento">
-        <div class="depoimento-intro">
-          <svg width="220" height="40" viewBox="0 0 220 40" xmlns="http://www.w3.org/2000/svg">
-          <polygon points="20,1 25,14 39,14 28,22 32,35 20,27 8,35 12,22 1,14 15,14" fill="red"/>
-          <polygon points="60,1 65,14 79,14 68,22 72,35 60,27 48,35 52,22 41,14 55,14" fill="red"/>
-          <polygon points="100,1 105,14 119,14 108,22 112,35 100,27 88,35 92,22 81,14 95,14" fill="red"/>
-          <polygon points="140,1 145,14 159,14 148,22 152,35 140,27 128,35 132,22 121,14 135,14" fill="red"/>
-          <polygon points="180,1 185,14 199,14 188,22 192,35 180,27 168,35 172,22 161,14 175,14" fill="red"/>
-          </svg>
-          <h2>Veja os depoimentos dos nossos clientes</h2>
-        </div>
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-    <div class="carousel-item active">
-      <div class="depoimento-card">
-     <div>
-      <div class="stantemant">
-            <img src="https://i.pinimg.com/originals/55/6e/2e/556e2edc7518c0e5cb4d59aef6729b24.jpg" alt="">
-            <h6>Diogo Vieira</h6>
+      <section class="about">
+        <div class="container">
+          <div class="about-visual reveal">
+            <svg viewBox="0 0 200 170" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="20" y="15" width="160" height="100" rx="10" stroke="#1656f5" stroke-width="3"/>
+              <circle cx="65" cy="55" r="14" stroke="#1656f5" stroke-width="3"/>
+              <path d="M75 65l16 16" stroke="#1656f5" stroke-width="3" stroke-linecap="round"/>
+              <path d="M110 45h45M110 60h30M110 75h40" stroke="#15161a" stroke-width="3" stroke-linecap="round"/>
+              <rect x="45" y="130" width="110" height="12" rx="6" stroke="#15161a" stroke-width="3"/>
+            </svg>
           </div>
-        <p>Excelente atendimento! Problema resolvido rápido, com profissionalismo, preço justo e atenção ao cliente!</p>
-        </div>
-        <div>
-           <div class="stantemant">
-            <img src="https://i.pinimg.com/originals/55/6e/2e/556e2edc7518c0e5cb4d59aef6729b24.jpg" alt="">
-            <h6>Márcio Antônio</h6>
-          </div>
-          <p>Excelente profissional, muito conhecimento e atenção ao cliente. Vai além do serviço e orienta bem!</p>
-        </div>
-        <div>
-           <div class="stantemant">
-            <img src="https://i.pinimg.com/originals/55/6e/2e/556e2edc7518c0e5cb4d59aef6729b24.jpg" alt="">
-            <h6>Breno Lima</h6>
-          </div>
-          <p>Atendimento surreal, cuidado com meu PC como se fosse dele. Profissional excelente, recomendo demais! mesmo!!!</p>
-        </div>
-        <div>
-           <div class="stantemant">
-            <img src="https://i.pinimg.com/originals/55/6e/2e/556e2edc7518c0e5cb4d59aef6729b24.jpg" alt="">
-            <h6>Talyson Cavalcante</h6>
-          </div>
-          <p>Meu notebook foi condenado em outra assistência, mas aqui conseguiram recuperar. Serviço excelente!</p>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
 
-      <div class="depoimento-card">
-        <div>
-          <div class="stantemant">
-            <img src="https://i.pinimg.com/originals/55/6e/2e/556e2edc7518c0e5cb4d59aef6729b24.jpg" alt="">
-            <h6>Ruth Alves</h6>
+          <div class="about-info reveal">
+            <span class="eyebrow">Transparência em cada reparo</span>
+            <h2>Reparos expressos que você vê!</h2>
+            <p>
+              Na R9 Informática, trabalhamos com total transparência. Por isso, a
+              maioria dos reparos são feitos com o equipamento aberto na frente do
+              cliente. Isso significa que você pode acompanhar tudo de pertinho,
+              passo a passo, seja bateria viciada ou um aparelho quebrado. Você
+              ainda tem a oportunidade de tirar suas dúvidas durante o processo, com
+              a privacidade e segurança que a nossa assistência proporciona.
+            </p>
+            <a href="https://wa.me/5588999194391" target="_blank" rel="noopener" class="btn btn-primary">
+              <svg class="icon"><use href="#icon-whatsapp"></use></svg>
+              Solicitar Orçamento
+            </a>
           </div>
-         <p>Atendimento excelente, serviço rápido e transparente. Meu PC ficou como novo após manutenção. Recomendo!</p>
         </div>
-        <div>
-           <div class="stantemant">
-            <img src="https://i.pinimg.com/originals/55/6e/2e/556e2edc7518c0e5cb4d59aef6729b24.jpg" alt="">
-            <h6>Otávio Mendes</h6>
-          </div>
-          <p>Excelente atendimento, muita honestidade e transparência nos serviços, melhor assistência técnica da cidade!</p>
-        </div>
-        <div>
-           <div class="stantemant">
-            <img src="https://i.pinimg.com/originals/55/6e/2e/556e2edc7518c0e5cb4d59aef6729b24.jpg" alt="">
-            <h6>Cleomar Cavalcante</h6>
-          </div>
-          <p>A melhor assistência técnica de Boa Viagem e região, atendimento rápido, honesto e serviço confiável!</p>
-        </div>
-        <div>
-          <div class="stantemant">
-            <img src="https://i.pinimg.com/originals/55/6e/2e/556e2edc7518c0e5cb4d59aef6729b24.jpg" alt="">
-            <h6>Jailson Soares</h6>
-          </div>
-          <p>Melhor assistência da cidade, atendimento top e super profissional. Recomendo demais o serviço de qualidade!</p>
-        </div>
-    </div>
-      </div>
-
-        
-    <div class="carousel-item">
-      <div class="depoimento-card">
-     <div>
-      <div class="stantemant">
-            <img src="https://i.pinimg.com/originals/55/6e/2e/556e2edc7518c0e5cb4d59aef6729b24.jpg" alt="">
-            <h6>Victo Barros</h6>
-          </div>
-         <p>Atendimento maravilhoso, atenção máxima com nossos PCs e serviço rápido, confiável e muito profissional!</p>
-          
-        </div>
-        <div>
-          <div class="stantemant">
-            <img src="https://i.pinimg.com/originals/55/6e/2e/556e2edc7518c0e5cb4d59aef6729b24.jpg" alt="">
-            <h6>Mariane Alves</h6>
-          </div>
-          <p>Ótimo atendimento e trabalho impecável, serviço rápido, profissional e de muita confiança!</p>
-          
-        </div>
-        <div>
-          <div class="stantemant">
-            <img src="https://i.pinimg.com/originals/55/6e/2e/556e2edc7518c0e5cb4d59aef6729b24.jpg" alt="">
-            <h6>Alysson Dogs</h6>
-          </div>
-          <p>Referência em informática na cidade, atendimento confiável, rápido e serviço de muita qualidade!</p>
-          
-        </div>
-        <div>
-           <div class="stantemant">
-            <img src="https://i.pinimg.com/originals/55/6e/2e/556e2edc7518c0e5cb4d59aef6729b24.jpg" alt="">
-            <h6>Junior</h6>
-          </div>
-          <p>Melhor assistência técnica da cidade, atendimento rápido, honesto e serviço de qualidade garantida!</p>
-         
-        </div>
-      </div>
-       
-
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
       </section>
 
+      <section class="services">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">O que fazemos</span>
+            <h2>Serviços Prestados</h2>
+            <p>Realizamos todos os serviços para o seu equipamento. Nossa missão é deixá-lo novo de novo.</p>
+          </div>
 
-      <section class="FAQ" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000" id="FAQ">
-        <div class="FAQ-intro">
-          <h2>Dúvidas Frequentes</h2>
-          <p>Ainda tem alguma dúvida? Clique no botão abaixo e fale com um de nossos consultores</p>
-          <button class="btn-faq">
-            <div class="icon-fale">
-              
-        <a href="https://wa.me/5588999194391" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff" viewBox="0 0 24 24">
-  <path d="M20.52 3.48A11.82 11.82 0 0012.05 0C5.5 0 .18 5.32.18 11.87c0 2.09.55 4.12 1.6 5.91L0 24l6.41-1.68a11.86 11.86 0 005.64 1.44h.01c6.55 0 11.87-5.32 11.87-11.87 0-3.17-1.23-6.15-3.41-8.41zM12.06 21.3a9.42 9.42 0 01-4.8-1.32l-.34-.2-3.8 1 1.01-3.71-.22-.38a9.4 9.4 0 011.44-11.66 9.41 9.41 0 0113.3 0 9.4 9.4 0 010 13.3 9.36 9.36 0 01-6.59 2.97zm5.17-7.03c-.28-.14-1.65-.82-1.9-.91-.25-.09-.43-.14-.61.14-.18.27-.7.91-.86 1.1-.16.18-.32.2-.6.07-.28-.14-1.18-.43-2.25-1.36-.83-.74-1.39-1.65-1.55-1.93-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.46.09-.18.05-.34-.02-.48-.07-.14-.61-1.48-.84-2.03-.22-.52-.44-.45-.61-.46l-.52-.01c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.3 0 1.36.98 2.68 1.12 2.86.14.18 1.94 2.96 4.7 4.14.66.28 1.18.45 1.58.58.66.21 1.26.18 1.73.11.53-.08 1.65-.67 1.88-1.31.23-.64.23-1.19.16-1.31-.07-.11-.25-.18-.52-.32z"/>
-</svg>
-          Tirar dúvidas via Whatsapp</a>
-
+          <div class="services-grid">
+            <div class="service-card reveal">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+              </div>
+              <h3>Formatação e instalação do Windows</h3>
+              <p>Instalação limpa do sistema, drivers e programas essenciais.</p>
             </div>
-      </button>
+
+            <div class="service-card reveal">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg>
+              </div>
+              <h3>Upgrade de computador e notebook</h3>
+              <p>Instalação de SSD, aumento de memória RAM e melhorias de desempenho.</p>
+            </div>
+
+            <div class="service-card reveal">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l6-6M14.5 3.5a3.54 3.54 0 015 5L11 17l-5 1 1-5z"/></svg>
+              </div>
+              <h3>Limpeza e manutenção preventiva</h3>
+              <p>Limpeza interna, troca de pasta térmica e otimização do equipamento.</p>
+            </div>
+
+            <div class="service-card reveal">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z"/><path d="M9.5 12l1.8 1.8L15 10"/></svg>
+              </div>
+              <h3>Remoção de vírus e otimização do sistema</h3>
+              <p>Eliminação de vírus, malwares e lentidão no computador.</p>
+            </div>
+
+            <div class="service-card reveal">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.1-3.1a5 5 0 01-6.7 6.7L4.3 21.7a2 2 0 01-2.8-2.8L12.3 8.1a5 5 0 016.7-6.7z"/></svg>
+              </div>
+              <h3>Reparo de computador e notebooks</h3>
+              <p>Diagnóstico e conserto de placas, telas, teclado, bateria e outros componentes.</p>
+            </div>
+
+            <div class="service-card reveal">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 00.34 1.87l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.7 1.7 0 00-1.87-.34 1.7 1.7 0 00-1.04 1.56V21a2 2 0 11-4 0v-.09A1.7 1.7 0 008.5 19.4a1.7 1.7 0 00-1.87.34l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.7 1.7 0 00.34-1.87 1.7 1.7 0 00-1.56-1.04H2a2 2 0 110-4h.09A1.7 1.7 0 003.6 8.5a1.7 1.7 0 00-.34-1.87l-.06-.06a2 2 0 112.83-2.83l.06.06a1.7 1.7 0 001.87.34H8a1.7 1.7 0 001.04-1.56V2a2 2 0 114 0v.09a1.7 1.7 0 001.04 1.56 1.7 1.7 0 001.87-.34l.06-.06a2 2 0 112.83 2.83l-.06.06a1.7 1.7 0 00-.34 1.87V8.5a1.7 1.7 0 001.56 1.04H21a2 2 0 110 4h-.09a1.7 1.7 0 00-1.56 1.04z"/></svg>
+              </div>
+              <h3>Instalação e configuração de programas</h3>
+              <p>Pacote Office, drivers, softwares profissionais e utilitários.</p>
+            </div>
+          </div>
         </div>
-        <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-        <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-        + Quais modelos de dispositivos vocês consertam?
-      </button>
-      </h2>
-    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>Todos.</strong>
-    </div>
-  </div>
-        </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        + O serviço é realizado em quanto tempo?
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>Muito rapidamente.</strong>
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        + Quais são as formas de pagamentos?
-      </button>
-    </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>Sendo dinheiro.</strong> 
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-       + Vocês dão garantia nos reparos?
-      </button>
-    </h2>
-    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>Sim, mas depende.</strong>
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-       + R9 Informatica é boa mesmo?
-      </button>
-    </h2>
-    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>É a melhor!</strong>
-      </div>
-    </div>
-  </div>
-</div>
       </section>
+
+      <section class="stats">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">R9 em números</span>
+            <h2>Resultado de quem confia no nosso trabalho</h2>
+          </div>
+
+          <div class="stats-grid reveal">
+            <div class="stat-item">
+              <span class="stat-value">+400</span>
+              <span class="stat-label">Clientes atendidos</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">+250</span>
+              <span class="stat-label">Manutenções realizadas</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">+180</span>
+              <span class="stat-label">Limpezas preventivas</span>
+            </div>
+          </div>
+
+          <div style="text-align: center;" class="reveal">
+            <a href="https://wa.me/5588999194391" target="_blank" rel="noopener" class="btn btn-primary">
+              <svg class="icon"><use href="#icon-whatsapp"></use></svg>
+              Solicitar Orçamento
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="location" id="endereco">
+        <div class="location-frame">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.904238182483!2d-39.73481594013738!3d-5.119132005055621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7bdef6951e97ff1%3A0xe1462e8fb5df7edf!2sR9%20INFORM%C3%81TICA!5e0!3m2!1spt-BR!2sbr!4v1773151963013!5m2!1spt-BR!2sbr"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Localização da R9 Informática no Google Maps"
+          ></iframe>
+        </div>
+
+        <div class="map-card reveal">
+          <h3>Onde estamos localizados</h3>
+          <p class="map-address">R. Maria da Conceição Alves de Melo, 194 - Padre Paulo</p>
+
+          <div class="map-hours">
+            <svg class="icon"><use href="#icon-clock"></use></svg>
+            <span>Seg - Sex: 8h às 17h</span>
+          </div>
+          <div class="map-hours">
+            <svg class="icon"><use href="#icon-clock"></use></svg>
+            <span>Sáb: 8h às 12h &amp; 14h às 18h</span>
+          </div>
+
+          <a
+            class="btn btn-outline btn-sm btn-block"
+            target="_blank"
+            rel="noopener"
+            href="https://www.google.com/maps?cid=16232713101670055647&amp;g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAEYASAB&amp;hl=pt-BR&amp;gl=BR&amp;source=embed"
+          >
+            Ver no Google Maps
+          </a>
+        </div>
+      </section>
+
+      <section class="testimonials" id="depoimento">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">Depoimentos</span>
+            <h2>Veja o que nossos clientes dizem</h2>
+          </div>
+
+          <div class="testimonial-track-wrap reveal">
+            <div class="testimonial-track" id="testimonialTrack">
+              <article class="testimonial-card">
+                <div class="testimonial-person">
+                  <span class="avatar-initial">D</span>
+                  <span>Diogo Vieira</span>
+                </div>
+                <p>Excelente atendimento! Problema resolvido rápido, com profissionalismo, preço justo e atenção ao cliente!</p>
+              </article>
+              <article class="testimonial-card">
+                <div class="testimonial-person">
+                  <span class="avatar-initial">M</span>
+                  <span>Márcio Antônio</span>
+                </div>
+                <p>Excelente profissional, muito conhecimento e atenção ao cliente. Vai além do serviço e orienta bem!</p>
+              </article>
+              <article class="testimonial-card">
+                <div class="testimonial-person">
+                  <span class="avatar-initial">B</span>
+                  <span>Breno Lima</span>
+                </div>
+                <p>Atendimento surreal, cuidado com meu PC como se fosse dele. Profissional excelente, recomendo demais!</p>
+              </article>
+              <article class="testimonial-card">
+                <div class="testimonial-person">
+                  <span class="avatar-initial">T</span>
+                  <span>Talyson Cavalcante</span>
+                </div>
+                <p>Meu notebook foi condenado em outra assistência, mas aqui conseguiram recuperar. Serviço excelente!</p>
+              </article>
+              <article class="testimonial-card">
+                <div class="testimonial-person">
+                  <span class="avatar-initial">R</span>
+                  <span>Ruth Alves</span>
+                </div>
+                <p>Atendimento excelente, serviço rápido e transparente. Meu PC ficou como novo após manutenção. Recomendo!</p>
+              </article>
+              <article class="testimonial-card">
+                <div class="testimonial-person">
+                  <span class="avatar-initial">O</span>
+                  <span>Otávio Mendes</span>
+                </div>
+                <p>Excelente atendimento, muita honestidade e transparência nos serviços, melhor assistência técnica da cidade!</p>
+              </article>
+              <article class="testimonial-card">
+                <div class="testimonial-person">
+                  <span class="avatar-initial">C</span>
+                  <span>Cleomar Cavalcante</span>
+                </div>
+                <p>A melhor assistência técnica de Boa Viagem e região, atendimento rápido, honesto e serviço confiável!</p>
+              </article>
+              <article class="testimonial-card">
+                <div class="testimonial-person">
+                  <span class="avatar-initial">J</span>
+                  <span>Jailson Soares</span>
+                </div>
+                <p>Melhor assistência da cidade, atendimento top e super profissional. Recomendo demais o serviço de qualidade!</p>
+              </article>
+              <article class="testimonial-card">
+                <div class="testimonial-person">
+                  <span class="avatar-initial">V</span>
+                  <span>Victor Barros</span>
+                </div>
+                <p>Atendimento maravilhoso, atenção máxima com nossos PCs e serviço rápido, confiável e muito profissional!</p>
+              </article>
+              <article class="testimonial-card">
+                <div class="testimonial-person">
+                  <span class="avatar-initial">M</span>
+                  <span>Mariane Alves</span>
+                </div>
+                <p>Ótimo atendimento e trabalho impecável, serviço rápido, profissional e de muita confiança!</p>
+              </article>
+              <article class="testimonial-card">
+                <div class="testimonial-person">
+                  <span class="avatar-initial">A</span>
+                  <span>Alysson Dogs</span>
+                </div>
+                <p>Referência em informática na cidade, atendimento confiável, rápido e serviço de muita qualidade!</p>
+              </article>
+              <article class="testimonial-card">
+                <div class="testimonial-person">
+                  <span class="avatar-initial">J</span>
+                  <span>Junior</span>
+                </div>
+                <p>Melhor assistência técnica da cidade, atendimento rápido, honesto e serviço de qualidade garantida!</p>
+              </article>
+            </div>
+
+            <div class="testimonial-controls">
+              <button class="carousel-btn" id="testimonialPrev" aria-label="Depoimento anterior">
+                <svg><use href="#icon-chevron-left"></use></svg>
+              </button>
+              <button class="carousel-btn" id="testimonialNext" aria-label="Próximo depoimento">
+                <svg><use href="#icon-chevron-right"></use></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq" id="FAQ">
+        <div class="container">
+          <div class="faq-intro reveal">
+            <span class="eyebrow">Dúvidas</span>
+            <h2>Perguntas Frequentes</h2>
+            <p>Ainda tem alguma dúvida? Fale com um de nossos consultores.</p>
+            <a href="https://wa.me/5588999194391" target="_blank" rel="noopener" class="btn btn-primary">
+              <svg class="icon"><use href="#icon-whatsapp"></use></svg>
+              Tirar dúvidas via WhatsApp
+            </a>
+          </div>
+
+          <div class="accordion reveal" id="accordion">
+            <div class="accordion-item" data-open="false">
+              <button class="accordion-trigger" aria-expanded="false">
+                Quais modelos de dispositivos vocês consertam?
+                <span class="plus"></span>
+              </button>
+              <div class="accordion-panel">
+                <div class="accordion-panel-inner">
+                  <p>Atendemos computadores, notebooks e videogames de diversas marcas e modelos.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item" data-open="false">
+              <button class="accordion-trigger" aria-expanded="false">
+                O serviço é realizado em quanto tempo?
+                <span class="plus"></span>
+              </button>
+              <div class="accordion-panel">
+                <div class="accordion-panel-inner">
+                  <p>O prazo varia de acordo com o tipo de reparo. Entre em contato pelo WhatsApp para um prazo estimado do seu equipamento.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item" data-open="false">
+              <button class="accordion-trigger" aria-expanded="false">
+                Quais são as formas de pagamento?
+                <span class="plus"></span>
+              </button>
+              <div class="accordion-panel">
+                <div class="accordion-panel-inner">
+                  <p>No momento, os pagamentos são realizados em dinheiro.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item" data-open="false">
+              <button class="accordion-trigger" aria-expanded="false">
+                Vocês dão garantia nos reparos?
+                <span class="plus"></span>
+              </button>
+              <div class="accordion-panel">
+                <div class="accordion-panel-inner">
+                  <p>Sim, oferecemos garantia nos reparos realizados. O prazo varia de acordo com o tipo de serviço — fale com a gente para saber a garantia do seu caso.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item" data-open="false">
+              <button class="accordion-trigger" aria-expanded="false">
+                R9 Informática é boa mesmo?
+                <span class="plus"></span>
+              </button>
+              <div class="accordion-panel">
+                <div class="accordion-panel-inner">
+                  <p>Nossos clientes dizem que sim! Confira os depoimentos acima.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="cta-banner-wrap">
+        <div class="cta-banner reveal">
+          <h2>Vamos resolver o seu equipamento hoje</h2>
+          <p>Fale agora com a nossa equipe e receba um orçamento rápido pelo WhatsApp.</p>
+          <a href="https://wa.me/5588999194391" target="_blank" rel="noopener" class="btn btn-primary">
+            <svg class="icon"><use href="#icon-whatsapp"></use></svg>
+            Falar no WhatsApp
+          </a>
+        </div>
+      </div>
     </main>
+
     <footer>
-      <div class="about-ft" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-        <h5>Sobre nós</h5>
-        <p>Nascemos em 2025 com o único próposito de fazer a <br>
-        diferença trazendo muita tecnologia e soluções objetivas <br>
-        para todos os dispositivos. Oferecemos serviço completo, <br> 
-        Assistência Técnica Especializada e muito mais. <br>
-        Se for Tecnologia, deeixa com a gente.</p>
-      </div>
-      <div class="red-ft" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000">
-        <h5>Fale conosco</h5>
-        
-        <div class="rede-ft-icon">
-          
-<a href="https://wa.me/5588999194391" target="_blank" rel="noopener">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-  <path d="M20.52 3.48A11.82 11.82 0 0012.05 0C5.5 0 .18 5.32.18 11.87c0 2.09.55 4.12 1.6 5.91L0 24l6.41-1.68a11.86 11.86 0 005.64 1.44h.01c6.55 0 11.87-5.32 11.87-11.87 0-3.17-1.23-6.15-3.41-8.41zM12.06 21.3a9.42 9.42 0 01-4.8-1.32l-.34-.2-3.8 1 1.01-3.71-.22-.38a9.4 9.4 0 011.44-11.66 9.41 9.41 0 0113.3 0 9.4 9.4 0 010 13.3 9.36 9.36 0 01-6.59 2.97zm5.17-7.03c-.28-.14-1.65-.82-1.9-.91-.25-.09-.43-.14-.61.14-.18.27-.7.91-.86 1.1-.16.18-.32.2-.6.07-.28-.14-1.18-.43-2.25-1.36-.83-.74-1.39-1.65-1.55-1.93-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.46.09-.18.05-.34-.02-.48-.07-.14-.61-1.48-.84-2.03-.22-.52-.44-.45-.61-.46l-.52-.01c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.3 0 1.36.98 2.68 1.12 2.86.14.18 1.94 2.96 4.7 4.14.66.28 1.18.45 1.58.58.66.21 1.26.18 1.73.11.53-.08 1.65-.67 1.88-1.31.23-.64.23-1.19.16-1.31-.07-.11-.25-.18-.52-.32z"/>
-</svg>
-        (88) 99919-4391
-</a>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <div class="footer-brand">
+              <svg class="logo-mark" aria-hidden="true"><use href="#logo-mark"></use></svg>
+              <span class="brand-text"><strong>R9</strong> Informática</span>
+            </div>
+            <p>
+              Nascemos em 2025 com o único propósito de fazer a diferença trazendo
+              muita tecnologia e soluções objetivas para todos os dispositivos.
+              Oferecemos serviço completo, assistência técnica especializada e
+              muito mais. Se for tecnologia, deixa com a gente.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Fale conosco</h4>
+            <a class="footer-contact-link" href="https://wa.me/5588999194391" target="_blank" rel="noopener">
+              <svg class="icon"><use href="#icon-whatsapp"></use></svg>
+              (88) 99919-4391
+            </a>
+            <a
+              class="footer-contact-link"
+              href="mailto:contato.lucastecnico@gmail.com?subject=Contato pelo site&amp;body=Olá, vim pelo site e gostaria de informações."
+            >
+              <svg class="icon"><use href="#icon-mail"></use></svg>
+              contato.lucastecnico@gmail.com
+            </a>
+          </div>
+
+          <div class="footer-col">
+            <h4>Endereço &amp; horários</h4>
+            <p>R. Maria da Conceição Alves de Melo, 194 - Padre Paulo, Boa Viagem - CE, 63870-000</p>
+            <div class="footer-hours">
+              <svg class="icon"><use href="#icon-clock"></use></svg>
+              <span>Seg - Sex: 8h às 17h</span>
+            </div>
+            <div class="footer-hours">
+              <svg class="icon"><use href="#icon-clock"></use></svg>
+              <span>Sáb: 8h às 12h &amp; 14h às 18h</span>
+            </div>
+
+            <div class="footer-socials">
+              <a href="https://wa.me/5588999194391" target="_blank" rel="noopener" aria-label="WhatsApp">
+                <svg class="icon"><use href="#icon-whatsapp"></use></svg>
+              </a>
+              <a href="https://www.instagram.com/r9.informatica/" target="_blank" rel="noopener" aria-label="Instagram">
+                <svg class="icon"><use href="#icon-instagram"></use></svg>
+              </a>
+            </div>
+          </div>
         </div>
 
-       
-        <div> 
-        <a href="mailto:contato.lucastecnico@gmail.com?subject=Contato pelo site&body=Olá, vim pelo site e gostaria de informações.">
- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-  <path d="M2 4h20a2 2 0 0 1 2 2v.5l-12 7.5L0 6.5V6a2 2 0 0 1 2-2zm22 4.2V18a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8.2l11.4 7.1a1 1 0 0 0 1.2 0L24 8.2z"/>
-</svg>
-        contato.lucastecnico@gmail.com
-
-        </a>
-         
-        </div>
-
-       
-      </div>
-      <div class="red-ft" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
-        <h5>Nosso Endereço</h5>
-        <p>R. Maria da Conceição Alves de Melo, 194 - <br> Padre Paulo Boa Viagem - CE, 63870-000</p>
-        <h5>Horários de Atendimento</h5>
-        <div class="rede-ft-end">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <circle cx="12" cy="12" r="10"></circle>
-  <polyline points="12 6 12 12 16 14"></polyline>
-</svg>
-        <p>Seg - Sex: 8h ás 17h</p>
-
-</div>
-<div class="rede-ft-icon">
-   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <circle cx="12" cy="12" r="10"></circle>
-  <polyline points="12 6 12 12 16 14"></polyline>
-</svg>
-        <p>Sab: 8h ás 12h & 14h ás 18h</p>
-</div>
-      </div>
-      <div class="rede-ft" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000">
-        <h4>Redes Sociais</h4>
-        <div class="rede-icons-ft">
-<a href="https://wa.me/5588999194391" target="_blank" rel="noopener">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ff0000" viewBox="0 0 24 24">
-  <path d="M20.52 3.48A11.82 11.82 0 0012.05 0C5.5 0 .18 5.32.18 11.87c0 2.09.55 4.12 1.6 5.91L0 24l6.41-1.68a11.86 11.86 0 005.64 1.44h.01c6.55 0 11.87-5.32 11.87-11.87 0-3.17-1.23-6.15-3.41-8.41zM12.06 21.3a9.42 9.42 0 01-4.8-1.32l-.34-.2-3.8 1 1.01-3.71-.22-.38a9.4 9.4 0 011.44-11.66 9.41 9.41 0 0113.3 0 9.4 9.4 0 010 13.3 9.36 9.36 0 01-6.59 2.97zm5.17-7.03c-.28-.14-1.65-.82-1.9-.91-.25-.09-.43-.14-.61.14-.18.27-.7.91-.86 1.1-.16.18-.32.2-.6.07-.28-.14-1.18-.43-2.25-1.36-.83-.74-1.39-1.65-1.55-1.93-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.46.09-.18.05-.34-.02-.48-.07-.14-.61-1.48-.84-2.03-.22-.52-.44-.45-.61-.46l-.52-.01c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.3 0 1.36.98 2.68 1.12 2.86.14.18 1.94 2.96 4.7 4.14.66.28 1.18.45 1.58.58.66.21 1.26.18 1.73.11.53-.08 1.65-.67 1.88-1.31.23-.64.23-1.19.16-1.31-.07-.11-.25-.18-.52-.32z"/>
-</svg>
-</a>
-
-<a href="">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ff0000" viewBox="0 0 24 24">
-  <path d="M22 12a10 10 0 10-11.56 9.87v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.88h-2.33v6.99A10 10 0 0022 12z"/>
-</svg>
-</a>
-
-<a href="">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ff0000" viewBox="0 0 24 24">
-  <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm5 5.5A4.5 4.5 0 1112 16.5 4.5 4.5 0 0112 7.5zm6.5-.75a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0zM12 9a3 3 0 100 6 3 3 0 000-6z"/>
-</svg>
-</a>
-
-<a href="">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ff0000" viewBox="0 0 24 24">
-  <path d="M16 2c.28 2.09 1.91 3.72 4 4v3.09a7.01 7.01 0 01-4-1.26V15a5 5 0 11-5-5c.17 0 .34.02.5.05v3.09A2 2 0 1014 15V2h2z"/>
-</svg>
-</a>
+        <div class="footer-bottom">
+          <p>&copy; <span id="year"></span> R9 Informática — Todos os direitos reservados.</p>
+          <p>Desenvolvido por Otávio Mendes</p>
         </div>
       </div>
     </footer>
-    <div class="credit" data-aos-delay="200" data-aos-duration="1000">
-      <p>© 2026 R9 Informática — Todos os direitos reservados.</p>
-      <p>Desenvolvido por Otávio Mendes</p>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-<script>
-  AOS.init({
-      once: true,
-  });
-</script>
+    <button id="scrollToTop" title="Voltar ao topo" aria-label="Voltar ao topo">
+      <svg class="icon"><use href="#icon-arrow-up"></use></svg>
+    </button>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
