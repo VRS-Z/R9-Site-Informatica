@@ -585,6 +585,7 @@ section.tight {
 }
 
 .map-card {
+  display: none;
   background: #fff;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
@@ -1127,10 +1128,6 @@ footer {
 
   .location {
     padding: 64px 0;
-  }
-
-  .map-card {
-    display: none;
   }
 
   .hero .container {
