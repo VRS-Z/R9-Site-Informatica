@@ -1095,13 +1095,15 @@ footer {
     justify-content: flex-start;
     padding: 28px 24px;
     gap: 28px;
-    transform: translateX(100%);
-    transition: transform 0.3s ease;
+    clip-path: inset(0 0 0 100%);
+    transition: clip-path 0.3s ease;
     overflow-y: auto;
+    pointer-events: none;
   }
 
   .main-nav.active {
-    transform: translateX(0);
+    clip-path: inset(0 0 0 0%);
+    pointer-events: auto;
   }
 
   .nav-links {
