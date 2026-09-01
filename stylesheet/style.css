@@ -1130,11 +1130,26 @@ footer {
   }
 
   .map-card {
-    width: auto;
-    left: 16px;
-    right: 16px;
-    bottom: 16px;
-    padding: 22px;
+    display: none;
+  }
+
+  .hero .container {
+    text-align: center;
+  }
+
+  .about-info {
+    text-align: center;
+  }
+
+  .footer-col {
+    text-align: center;
+  }
+
+  .footer-brand,
+  .footer-contact-link,
+  .footer-hours,
+  .footer-socials {
+    justify-content: center;
   }
 
   .location-frame iframe {
