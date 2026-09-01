@@ -560,7 +560,7 @@ section.tight {
    Map / Address
    ============================================ */
 .location {
-  padding: 0 0 96px;
+  padding: 96px 0;
   background-color: var(--color-bg-alt);
 }
 
@@ -579,10 +579,11 @@ section.tight {
   background: #fff;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
-  padding: 32px;
-  max-width: 340px;
-  margin: -100px auto 0;
-  position: relative;
+  padding: 28px;
+  width: 320px;
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
   z-index: 2;
 }
 
@@ -1114,16 +1115,19 @@ footer {
   }
 
   .location {
-    padding-bottom: 64px;
+    padding: 64px 0;
   }
 
   .map-card {
-    margin: -60px 16px 0;
-    max-width: none;
+    width: auto;
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    padding: 22px;
   }
 
   .location-frame iframe {
-    height: 320px;
+    height: 420px;
   }
 
   .footer-grid {
